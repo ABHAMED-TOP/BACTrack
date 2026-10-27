@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تالتة بكالوريا - مسار الهندسة</title>
+    <link rel="stylesheet" href="engineering.css">
+    <script src="engineering.js" defer></script>
+</head>
+<body class="engineering-page">
+
+    <div class="theme-toggle-container">
+        <button class="theme-btn" onclick="window.location.href='engineering.html'">⬅️ العودة لمسار الهندسة</button>
+        <button id="themeToggleBtn" class="theme-btn" onclick="toggleTheme()">
+            <span id="themeIcon">🌙</span> <span id="themeText">الوضع الليلي</span>
+        </button>
+    </div>
+
+    <div class="main-container">
+        <header class="header-section">
+            <div class="track-icon">📙</div>
+            <h1>السنة الثالثة بكالوريا (مسار الهندسة)</h1>
+            <p class="subtitle">المواد المقررة للمستوى الرفيع</p>
+        </header>
+
+        <div class="track-card details-card-view">
+            <div class="info-group">
+                <h3>📚 المواد المقررة:</h3>
+                <ul class="details-list">
+                    <li>🔹 رياضيات (مستوى رفيع)</li>
+                    <li>🔹 فيزياء (مستوى رفيع)</li>
+                </ul>
+            </div>
+
+            <div class="action-container" style="margin-top: 30px;">
+                <button class="btn-submit" onclick="selectTrack('هندسة - تالتة بكالوريا')">
+                    ✅ تأكيد اختيار تالتة بكالوريا
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

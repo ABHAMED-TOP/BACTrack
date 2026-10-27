@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تانية بكالوريا - مسار الأدب</title>
+    <link rel="stylesheet" href="arts.css">
+    <script src="arts.js" defer></script>
+</head>
+<body class="literature-page">
+
+    <div class="theme-toggle-container">
+        <button class="theme-btn" onclick="window.location.href='arts.html'">⬅️ العودة لمسار الأدب</button>
+        <button id="themeToggleBtn" class="theme-btn" onclick="toggleTheme()">
+            <span id="themeIcon">🌙</span> <span id="themeText">الوضع الليلي</span>
+        </button>
+    </div>
+
+    <div class="main-container">
+        <header class="header-section">
+            <div class="track-icon">📘</div>
+            <h1>السنة الثانية بكالوريا (مسار الأدب)</h1>
+            <p class="subtitle">المواد المقررة والاختيارية لهذا العام</p>
+        </header>
+
+        <div class="track-card details-card-view">
+            <div class="info-group">
+                <h3>📚 المواد المقررة:</h3>
+                <ul class="details-list">
+                    <li>🔹 اللغة العربية</li>
+                    <li>🔹 اللغة الإنجليزية</li>
+                    <li>🔹 التاريخ</li>
+                    <li>🔸 <strong>مادة اختيارية:</strong> (جغرافيا <u>أو</u> فلسفة وعلم نفس)</li>
+                </ul>
+            </div>
+
+            <div class="action-container" style="margin-top: 30px;">
+                <button class="btn-submit" onclick="selectTrack('أدب - تانية بكالوريا')">
+                    ✅ تأكيد اختيار تانية بكالوريا
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

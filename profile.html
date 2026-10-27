@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملف الشخصي - بيانات المستخدم</title>
+    <link rel="stylesheet" href="بروفايل.css">
+    <script src="بروفايل.js" defer></script>
+</head>
+<body class="profile-page">
+
+    <div class="theme-toggle-container">
+        <button class="theme-btn" onclick="window.location.href='واجه.html'">⬅️ العودة للواجهة الرئيسية</button>
+        <button id="themeToggleBtn" class="theme-btn" onclick="toggleTheme()">
+            <span id="themeIcon">🌙</span> <span id="themeText">الوضع الليلي</span>
+        </button>
+    </div>
+
+    <div class="main-container">
+        <header class="header-section">
+            <div class="track-icon">👤</div>
+            <h1>الملف الشخصي</h1>
+            <p class="subtitle">بيانات الحضور والتقييمات الخاصة بك</p>
+        </header>
+
+        
+        <div class="track-card">
+            <div class="info-group">
+                <h3>📅 إحصائيات الحضور</h3>
+                <div class="stat-grid">
+                    <div class="stat-box">
+                        <span class="stat-number" id="attendedDays">0</span>
+                        <span class="stat-label">أيام الحضور</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number" id="attendanceRate">0%</span>
+                        <span class="stat-label">نسبة الحضور</span>
+                    </div>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" id="attendanceProgress"></div>
+                </div>
+
+                <button id="checkInBtn" class="btn-submit" onclick="registerTodayAttendance()" style="margin-top: 15px;">
+                    ✅ تسجيل حضور اليوم
+                </button>
+            </div>
+        </div>
+
+        <!-- كارت إحصائيات التقييمات -->
+        <div class="track-card" style="margin-top: 20px;">
+            <div class="info-group">
+                <h3>⭐ إحصائيات التقييمات</h3>
+                <div class="stat-grid">
+                    <div class="stat-box">
+                        <span class="stat-number" id="totalRatings">0</span>
+                        <span class="stat-label">عدد التقييمات</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number" id="ratingPercentage">0%</span>
+                        <span class="stat-label">نسبة التقييم</span>
+                    </div>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill rating-fill" id="ratingProgress"></div>
+                </div>
+
+                <!-- زرار إضافة تقييم مضاف هنا بنفس التنسيق -->
+                <button class="btn-submit" onclick="addNewRating()" style="margin-top: 15px; background-color: #d97706;">
+                    ⭐ إضافة تقييم جديد
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

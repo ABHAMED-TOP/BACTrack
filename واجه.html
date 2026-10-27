@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <div class="top-nav-bar">
+        
+        <div class="user-profile-widget" onclick="window.location.href='profile.html'">
+            <span class="profile-icon">👤</span>
+            <span class="profile-label">الملف الشخصي</span>
+        </div>
+    
+        <button id="themeToggleBtn" class="theme-btn" onclick="toggleTheme()">
+            <span id="themeIcon">🌙</span> <span id="themeText">الوضع الليلي</span>
+        </button>
+    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختر المسار - نظام البكالوريا</title>
+    <link rel="stylesheet" href="واجه.css">
+    <script src="واجه.js"></script>
+</head>
+<body>
+
+   
+    <div class="theme-toggle-container">
+        <button id="themeToggleBtn" class="theme-btn" onclick="toggleTheme()">
+            <span id="themeIcon">🌙</span> <span id="themeText">الوضع الليلي</span>
+        </button>
+    </div>
+
+    <div class="main-container">
+       
+        <header class="header-section">
+            <h1 id="welcomeTitle">مرحباً بك 👋</h1>
+            <p class="subtitle">اختر المسار التعليمي المناسب لك لمتابعة تفاصيل موادك وكلياتك المستقبلية</p>
+        </header>
+
+       
+        <div class="tracks-grid">
+
+            
+            <div class="track-card" onclick="window.location.href='engineering.html'">
+              <div class="track-icon">📐</div>
+              <div class="track-title">مسار الهندسة والتكنولوجيا</div>
+              <div class="track-desc">يركز على الرياضيات، الفيزياء، وعلوم الحاسب والتكنولوجيا.</div>
+            </div>
+          
+            
+            <div class="track-card" onclick="window.location.href='medical.html'">
+              <div class="track-icon">🩺</div>
+              <div class="track-title">مسار العلوم والطب</div>
+              <div class="track-desc">يركز على الأحياء، الكيمياء، والعلوم الطبية والصحية.</div>
+            </div>
+          
+          
+            <div class="track-card" onclick="window.location.href='business.html'">
+              <div class="track-icon">📊</div>
+              <div class="track-title">مسار الأعمال والإدارة</div>
+              <div class="track-desc">يركز على الاقتصاد، المحاسبة، وإدارة الأعمال الحديثة.</div>
+            </div>
+          
+            
+            <div class="track-card" onclick="window.location.href='arts.html'">
+              <div class="track-icon">📚</div>
+              <div class="track-title">مسار الآداب واللغات</div>
+              <div class="track-desc">يركز على اللغات، العلوم الإنسانية، التاريخ والآداب.</div>
+            </div>
+          
+          </div>
+
+        </div>
+    </div>
+
+   
+</body>
+</html>
